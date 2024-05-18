@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../..">
+        <link rel="prev" href="../">
       
       
         <link rel="next" href="../2/">
@@ -212,7 +212,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../" class="md-tabs__link">
           
   
   C++ 基础教程
@@ -333,6 +333,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/statement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    声明
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -382,6 +403,27 @@
             C++ 基础教程
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    开始学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -680,65 +722,65 @@
 <p>在 C++ 中，可以使用 <code>std::cin</code> 和  <code>std::cout</code> 来进行标准输入输出。但在使用他们之前，我们要包含输入输出流库 <code>&lt;iostream&gt;</code> 。在 C++ 中有很多库（或者称为头文件），不同的库中包含了不同的功能。这里提到的 <code>&lt;iostream&gt;</code> 库包含了输入输出的功能，我们在后面学习中会学更多的功能，遇到不同的头文件。</p>
 <p>C++ 中，我们一定要有一个 <code>main</code> 函数。我们要在 <code>main</code> 函数中编写程序中的核心的内容。</p>
 <p>让我们尝试一下输出 <code>Hello, World</code> 吧！</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-
-int main () {
-    std::cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; std::endl;
-    return 0;
-}
-</code></pre>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>请注意，在 C++ 代码中，每一句的结尾一定要有 <code>;</code>。如果你的句末没有 <code>;</code>，就会被提示编译错误（CE）。</p>
 <p>在上面这份代码中，我们对于输出的内容要使用 <code>&lt;&lt;</code> 重载运算符插入到输出流中。<code>std::endl</code> 是用于输出换行并刷新缓冲区。你可以先不必了解这些概念性的东西，也许我们在后面会讲到，也许随着你写得代码越来越多你也会会逐渐理解。</p>
 <p>如果你想输出 <code>Hello, World!</code> 这样的文字，就必须要用两个 <code>"</code> 将其包裹起来。</p>
 <p>在 <code>main</code> 函数的结尾，我们通常会加上 <code>return 0;</code> 来返回整数类型的 <code>0</code>，代表着程序运行结束。</p>
 <p>在代码中，我们可以使用 <code>std</code> 命名空间，这样你就可以直接使用 <code>cout</code>、<code>endl</code>，而在前面无需加上 <code>std</code> 前缀。这样可以让代码更加简洁易读。</p>
 <p>如果要使用 <code>std</code> 命名空间，你只需要在代码中添加 <code>using namespace std;</code> 即可，完整代码如下：</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main() {
-    cout &lt;&lt; &quot;Hello, World!&quot; &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="p">}</span>
+</span></code></pre></div>
 <h2 id="12">1.2 输入与变量</h2>
 <p>在 C++ 中，我们可以使用 <code>std::cin</code> 来做标准输入，其中输入的内容要用输入操作符 <code>&gt;&gt;</code> 连接。我们仍要引入 <code>&lt;iostream&gt;</code> 库。</p>
 <p>在算法竞赛中，输入的内容通常是需要被保存的，这时候就需要 <strong>变量</strong>。</p>
 <p>变量的类型有很多种，常见的如 <code>int</code>、<code>long long</code>、<code>double</code>、<code>char</code> 等等，我们后续都会讲到。这里我们以 <code>int</code> 类型变量举例。</p>
-<p><code>int</code> 类型变量是 C++ 中表示整数类型的数据类型之一。它通常占用 4 个字节（32 位），能保存的整数的范围约在 <span class="arithmatex">\(-2,147,483,648\)</span> 到 <span class="arithmatex">\(2,147,483,648\)</span>，也就是 <span class="arithmatex">\(-2^{31}-1\)</span> 到 <span class="arithmatex">\(2^{31}-1\)</span> 这个范围。</p>
+<p><code>int</code> 类型变量是 C++ 中表示整数类型的数据类型之一。它通常占用 4 个字节（32 位），能保存的整数的范围约在 $-2,147,483,648$ 到 $2,147,483,648$，也就是 $-2^{31}-1$ 到 $2^{31}-1$ 这个范围。</p>
 <p>声明一个 <code>int</code> 类型的变量可以使用语法 <code>int myInt;</code>，这将在内存中分配存储整数值的空间。其中 <code>myInt</code> 是变量名，你可以把他改成任何合法的变量名（关于合法，你可以理解成和你现有的变量名、函数名以及标准模板库中的功能名字不冲突的）。你可以把变量想成一个盒子，每个盒子存储一个内容，也占用一些空间。</p>
 <p>接下来是一个例子：</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main () {
-    int a; // 定义整数类型变量 a 
-    cin &gt;&gt; a; // 输入 a 变量（应该是一个整数） 
-    cout &lt;&lt; a &lt;&lt; endl; // 输出 a 变量并换行 
-    return 0;
-}
-</code></pre>
-<p>在这个例子中，我们定义了一个 <code>int</code> 类型变量 <span class="arithmatex">\(a\)</span>，并且输入一个整数 <span class="arithmatex">\(a\)</span>。当我们输入一个符合条件的整数时，比如 <code>10</code>，你会发现程序输出了一个 <code>10</code>。</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 定义整数类型变量 a </span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输入 a 变量（应该是一个整数） </span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输出 a 变量并换行 </span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>在这个例子中，我们定义了一个 <code>int</code> 类型变量 $a$，并且输入一个整数 $a$。当我们输入一个符合条件的整数时，比如 <code>10</code>，你会发现程序输出了一个 <code>10</code>。</p>
 <p>请注意：在 C++ 中，对于任何变量的定义一定是要先声明的。如果没有声明就会产生编译错误。</p>
 <h2 id="13">1.3 变量的赋值与运算</h2>
 <p>当你输出一个没有被处理过的变量时，你会发现这个变量是一个奇怪的数字。这是因为如果你没有为变量赋值，那么这块内存中原本可能包含着其他数据留下的残留内容，或者是操作系统随机分配的数值。</p>
 <p>对于变量的赋值，我们前面提到过可以通过输入的方式为变量赋值。不过如果你不想通过输入的方式，那我们有别的办法。</p>
 <p>我们可以可以通过赋值操作符 <code>=</code> 对 <code>int</code> 变量进行赋值，比如 <code>int myInt = 10;</code>。</p>
 <p>当我们这样做了之后，<code>int</code> 类型变量 <code>myInt</code> 就存了 <code>10</code> 这个数字。试试看吧！</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main () {
-    int a; // 定义整数类型变量 a 
-    cin &gt;&gt; a; // 输入 a 变量（应该是一个整数） 
-    int b = 10; // 定义整数类型变量 b，并将其赋值为 10 
-    cout &lt;&lt; a &lt;&lt; &quot; &quot; &lt;&lt; b &lt;&lt; endl; // 输出两行，分别是变量 a, b
-    return 0;
-}
-</code></pre>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 定义整数类型变量 a </span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输入 a 变量（应该是一个整数） </span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// 定义整数类型变量 b，并将其赋值为 10 </span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输出两行，分别是变量 a, b</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>除了赋值操作以外，<code>int</code> 类型变量还可以进行一些数学运算。包括加、减、乘、除等。除了这些基本的数学运算，还有位运算、异或运算等。这两种运算可以先有所了解，后面会提到的。</p>
 <p>每一种运算都对应着运算符，请看下表：</p>
 <table>
@@ -761,31 +803,31 @@ int main () {
 </tr>
 </tbody>
 </table>
-<p>取模运算其实是在求两个数相除后得到的余数，书写上常用 <code>mod</code> 表示。比如 <span class="arithmatex">\(10 \mod 3 = 1\)</span>，即 <span class="arithmatex">\(10\)</span> 除以 <span class="arithmatex">\(3\)</span> 得到的余数。当 <span class="arithmatex">\(a \mod b = 0\)</span> 的时候，则说明 <span class="arithmatex">\(a\)</span> 是 <span class="arithmatex">\(b\)</span> 的倍数。</p>
+<p>取模运算其实是在求两个数相除后得到的余数，书写上常用 <code>mod</code> 表示。比如 $10 \mod 3 = 1$，即 $10$ 除以 $3$ 得到的余数。当 $a \mod b = 0$ 的时候，则说明 $a$ 是 $b$ 的倍数。</p>
 <p>运算的优先级和数学上运算的优先级是一样的。你也可以用小括号 <code>()</code> 来确定运算的优先级，和数学一样，小括号的运算优先级是最大的。但没有中括号、大括号，这些都可以用小括号来代替。</p>
 <p>例如 <code>int b = a + 1;</code> 表示将变量 <code>a</code> 加上 <code>1</code> 的值存在变量 <code>b</code> 中。</p>
 <p>此外，变量还可以进行自增、自减等操作。你可以理解成：将 <code>n</code> 变量原来的值和另外一个值进行运算，运算后的结果存储在变量 <code>n</code> 中。</p>
 <p>接下来一个简单的示例，可以帮助你更好地了解变量的赋值与运算：</p>
-<pre><code class="language-cpp">#include &lt;iostream&gt;
-
-using namespace std;
-
-int main () {
-    int m = 10; // 为变量 m 赋值为 10 
-    cout &lt;&lt; m &lt;&lt; endl; // 输出 m 的值 10
-    int n = m; // 将变量 n 赋值为 m，则 n 的值为 10 
-    cout &lt;&lt; n &lt;&lt; endl; //  输出 n 的值为 10 
-    n = n + 1; // n 存储的值为 10 + 1 = 11
-    cout &lt;&lt; n &lt;&lt; endl;
-    n = n - 2; // n 存储的值为 11 - 2 = 9
-    cout &lt;&lt; n &lt;&lt; endl;
-    n = n / 3; // n 存储的值为 9 / 3 = 3 
-    cout &lt;&lt; n &lt;&lt; endl;
-    n = n * 0; // n 存储的值为 3 * 0 = 0 
-    cout &lt;&lt; n &lt;&lt; endl;
-    return 0;
-}
-</code></pre>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="c1">// 为变量 m 赋值为 10 </span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">// 输出 m 的值 10</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="c1">// 将变量 n 赋值为 m，则 n 的值为 10 </span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w"> </span><span class="c1">//  输出 n 的值为 10 </span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">// n 存储的值为 10 + 1 = 11</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span><span class="c1">// n 存储的值为 11 - 2 = 9</span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span><span class="w"> </span><span class="c1">// n 存储的值为 9 / 3 = 3 </span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// n 存储的值为 3 * 0 = 0 </span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="p">}</span>
+</span></code></pre></div>
 <p>将一个新的值存到变量中一定要用赋值操作（或者通过输入的方式），如果没有赋值操作，那如 <code>n + 1</code> 这样的单独的语句是没有任何意义的。</p>
 <p>此外，还有一些简单的写法，如 <code>n = n + 1</code> 可以简化为 <code>n += 1</code>，<code>a = a - b</code> 可以简化为 <code>a -= b</code>。这些简单的写法很实用，请读者们自己探索。</p>
 <script src="https://giscus.app/client.js"
@@ -832,7 +874,7 @@ int main () {
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2016 - 2024 Hatmic
+      Copyright &copy; 2024 Hatmic
     </div>
   
   
@@ -895,7 +937,7 @@ int main () {
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.ebd0bdb7.min.js"></script>

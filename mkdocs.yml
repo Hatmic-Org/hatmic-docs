@@ -26,6 +26,10 @@ theme:
     - search.highlight
     - search.share
 
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+
 plugins:
   - search
 
@@ -41,12 +45,24 @@ extra:
     - icon: fontawesome/brands/youtube
     - icon: fontawesome/brands/twitter
 
-copyright: 'Copyright &copy; 2016 - 2024 Hatmic'
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+
+copyright: 'Copyright &copy; 2024 Hatmic'
 
 nav:
   - 关于: 
     - 首页: index.md
+    - 声明: about/statement.md
   - C++ 基础教程: 
+      - 开始学习: cpp0/index.md
       - C++ 基础语法 - 1 前言、OJ、编辑器、输入输出与分支结构: cpp0/1.md
       - C++ 基础语法 - 2 分支结构: cpp0/2.md
       - C++ 基础语法 - 3 循环结构: cpp0/3.md

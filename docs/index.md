@@ -8,6 +8,12 @@
 
 我是 Hatmic，一名来自中国的初中音乐、计算机爱好者。我在 14 岁的时候开始完善这个站点。在音乐方面，我可以演奏钢琴、电吉他，并创作自己的旋律；在计算机领域，我对前端开发感兴趣。[hatmic.com](https://hatmic.com/) 是我的网址，你可以在 [GitHub](https://github.com/hatmic/) 上关注我。
 
+## 快速导航
+
+[我的 GitHub 账号](https://github.com){.md-button .md-button--primary} [个人项目展示页](https://pro.hatmic.com){.md-button .md-button--primary} [编程猫工作室排行榜脚本](https://github.com/Hatmic/Codemao-Studio-Ranking){.md-button .md-button--primary}
+
+[C++ 基础教程](cpp0/){.md-button}
+
 <script src="https://giscus.app/client.js"
         data-repo="hatmic/hatmic-docs"
         data-repo-id="R_kgDOL9L8Zg"
