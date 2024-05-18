@@ -155,8 +155,6 @@ int main() {
 }
 ```
 
-希望读者们能多练习题目，更好地理解如何应用数组。在竞赛中，熟练掌握数组是很重要的。
-
 <script src="https://giscus.app/client.js"
         data-repo="hatmic/hatmic-docs"
         data-repo-id="R_kgDOL9L8Zg"
