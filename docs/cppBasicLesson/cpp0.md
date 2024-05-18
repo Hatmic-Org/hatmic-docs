@@ -158,3 +158,19 @@ int main () {
 将一个新的值存到变量中一定要用赋值操作（或者通过输入的方式），如果没有赋值操作，那如 `n + 1` 这样的单独的语句是没有任何意义的。
 
 此外，还有一些简单的写法，如 `n = n + 1` 可以简化为 `n += 1`，`a = a - b` 可以简化为 `a -= b`。这些简单的写法很实用，请读者们自己探索。
+
+<script src="https://giscus.app/client.js"
+        data-repo="hatmic/hatmic-docs"
+        data-repo-id="R_kgDOL9L8Zg"
+        data-category="General"
+        data-category-id="DIC_kwDOL9L8Zs4Cfc2T"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>

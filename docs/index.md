@@ -8,4 +8,18 @@
 
 我是 Hatmic，一名来自中国的初中音乐、计算机爱好者。我在 14 岁的时候开始完善这个站点。在音乐方面，我可以演奏钢琴、电吉他，并创作自己的旋律；在计算机领域，我对前端开发感兴趣。[hatmic.com](https://hatmic.com/) 是我的网址，你可以在 [GitHub](https://github.com/hatmic/) 上关注我。
 
-
+<script src="https://giscus.app/client.js"
+        data-repo="hatmic/hatmic-docs"
+        data-repo-id="R_kgDOL9L8Zg"
+        data-category="General"
+        data-category-id="DIC_kwDOL9L8Zs4Cfc2T"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
