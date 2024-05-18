@@ -6,4 +6,4 @@
 
 感谢 [T-MKT](https://github.com/T-MKT) 为本系列的部分教程查缺补漏，给出宝贵的建议。
 
-[开始学习](1){.md-button}
+[开始学习](1/){.md-button}
