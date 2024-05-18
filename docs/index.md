@@ -18,7 +18,7 @@
         data-reactions-enabled="1"
         data-emit-metadata="0"
         data-input-position="bottom"
-        data-theme="light"
+        data-theme="light_tritanopia"
         data-lang="zh-CN"
         crossorigin="anonymous"
         async>
