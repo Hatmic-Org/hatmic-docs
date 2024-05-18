@@ -12,7 +12,7 @@
 
 [我的 GitHub 账号](https://github.com){.md-button .md-button--primary} [个人项目展示页](https://pro.hatmic.com){.md-button .md-button--primary} [编程猫工作室排行榜脚本](https://github.com/Hatmic/Codemao-Studio-Ranking){.md-button .md-button--primary}
 
-[C++ 基础教程](cpp0/){.md-button}
+[GitHub 仓库](https://github.com/Hatmic/hatmic-docs){.md-button} [C++ 基础教程](cpp0/){.md-button}
 
 <script src="https://giscus.app/client.js"
         data-repo="hatmic/hatmic-docs"
