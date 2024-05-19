@@ -13,14 +13,32 @@ extra_css:
   - katex/katex.min.css
 
 theme:
+  language: zh
+
   name: material
   palette:
-    primary: white
+    # Palette toggle for light mode
+    - scheme: default
+      primary: white
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
   favicon: '../img/favicon.png'
   features:
+    - header.autohide
+
     - search
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.instant
+    - navigation.instant.progress
 
     - search.suggest
     - search.highlight
@@ -32,6 +50,7 @@ theme:
 
 plugins:
   - search
+  - tags
 
 repo_name: 'Hatmic/Hatmic-Docs'
 repo_url: 'https://github.com/hatmic/hatmic-docs/'
@@ -61,10 +80,13 @@ nav:
   - 关于: 
     - 首页: index.md
     - 声明: about/statement.md
+  - Mkdocs 使用教程:
+    - 开始学习: mkdocs0/start.md
+    - 安装: mkdocs0/download.md
   - C++ 基础教程: 
-      - 开始学习: cpp0/index.md
-      - C++ 基础语法 - 1 前言、OJ、编辑器、输入输出与分支结构: cpp0/1.md
-      - C++ 基础语法 - 2 分支结构: cpp0/2.md
-      - C++ 基础语法 - 3 循环结构: cpp0/3.md
-      - C++ 基础语法 - 4 数组: cpp0/4.md
+    - 开始学习: cpp0/index.md
+    - C++ 基础语法 - 1 前言、OJ、编辑器、输入输出与分支结构: cpp0/1.md
+    - C++ 基础语法 - 2 分支结构: cpp0/2.md
+    - C++ 基础语法 - 3 循环结构: cpp0/3.md
+    - C++ 基础语法 - 4 数组: cpp0/4.md
   
